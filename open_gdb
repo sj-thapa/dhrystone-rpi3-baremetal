@@ -1,0 +1,2 @@
+\rm gdb.txt
+aarch64-none-elf-gdb --command=ConnectJTAG.gdb build/dhrystone.elf
