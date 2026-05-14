@@ -60,6 +60,19 @@ make clean
 
 The output ELF is placed at `build/dhrystone.elf`.
 
+## JTAG Wiring (FT232H to Raspberry Pi 3B+)
+
+| Function | FT232H Pin | Pi Pin | Pi GPIO |
+|----------|-----------|--------|---------|
+| TCK | D0 | 22 | 25 |
+| TDI | D1 | 37 | 26 |
+| TDO | D2 | 18 | 24 |
+| TMS | D3 | 13 | 27 |
+| TRST | D4 | 15 | 22 |
+| SRST | D5 | Not connected | Not connected |
+| RTCK | D7 | 16 | 23 |
+| GND | GND | 39 | GND |
+
 ## Running on Hardware
 
 Connect via JTAG and use the provided GDB script:
