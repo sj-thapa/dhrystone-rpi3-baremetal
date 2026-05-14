@@ -28,7 +28,17 @@ linker/         Linker script
 ## Prerequisites
 
 - `aarch64-none-elf` GCC toolchain (Arm GNU Toolchain)
-- JTAG debugger (e.g., OpenOCD) for loading onto hardware
+- JTAG debugger (e.g., Adafruit FT232H) with OpenOCD for loading onto hardware
+- USB-to-UART TTL serial adapter (e.g., CP2102) for reading UART output
+- Raspberry Pi 3B+ with an SD card
+
+## SD Card Setup
+
+Copy the contents of `sdcard/` to a FAT32-formatted SD card and insert it into the Raspberry Pi 3B+:
+
+```bash
+cp sdcard/* /path/to/sdcard/
+```
 
 ## Building
 
